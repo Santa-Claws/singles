@@ -10,15 +10,26 @@ def names():
 
 player_names = names()
 
+
+
 def logs(names):
-  for i in range(0,len(names) - 1):
-    player1 = choice(names)
-    player2 = choice(names)
-    death_messages = [player2 + ' battles ' + player1 + ', ' + player2 + ' kills ' + player1,player1 + ' tried to swim in lava',player1 + ' used 2 seconds of copyrighted music on youtube and died', player1 + ' got cancelled on twitter for frgetting a tone indicator', player1 + ' died from death', player1 + ' didnt have pass royal', player1 + ' died from stage 4 brain cancer', player1 + ' died from stage 4 breast cancer', player1 + ' was asian', player1 + ' died because asian heratige month ended', player1 + ' ate the nono powder', player1 + ' had an allergic reaction to air']
-    normal_logs = []
-    print(choice(death_messages))
-    names.remove(player1)
-  print(names[0] + ' wins!!')
+  all_logs = []
+  while True:
+    for i in range(0,len(names) - 1):
+      player1 = choice(names)
+      player2 = choice(names)
+      death_messages = [player2 + ' battles ' + player1 + ', ' + player2 + ' kills ' + player1,player1 + ' tried to swim in lava',player1 + ' used 2 seconds of copyrighted music on youtube and died', player1 + ' got cancelled on twitter for frgetting a tone indicator', player1 + ' died from death', player1 + ' didnt have pass royal', player1 + ' died from stage 4 brain cancer', player1 + ' died from stage 4 breast cancer', player1 + ' was asian', player1 + ' died because asian heratige month ended', player1 + ' ate the nono powder', player1 + ' had an allergic reaction to air']
+      normal_logs = ['default normal log\n(normal logs not done yet)']
+      all_logs.append(death_messages)
+      all_logs.append(normal_logs)
+      message_choice = choice(all_logs)
+      print(choice(message_choice))
+      if message_choice == death_messages:
+        names.remove(player1)
+      if len(names) == 1:
+        print(names[0] + ' wins!!')
+        break
+
 
 logs(player_names)
 
