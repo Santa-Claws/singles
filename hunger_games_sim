@@ -1,0 +1,46 @@
+from random import choice
+def names():
+  players = []
+  number_input = input('how many players do you want\n')
+  for _ in range(0,int(number_input)):
+    name_input = input('list the player\n')
+    players.append(name_input)
+  print(players)
+  return players
+
+player_names = names()
+
+def logs(names):
+  for i in range(0,len(names) - 1):
+    player1 = choice(names)
+    player2 = choice(names)
+    death_messages = [player2 + ' battles ' + player1 + ', ' + player2 + ' kills ' + player1,player1 + ' tried to swim in lava',player1 + ' used 2 seconds of copyrighted music on youtube and died', player1 + ' got cancelled on twitter for frgetting a tone indicator', player1 + ' died from death', player1 + ' didnt have pass royal', player1 + ' died from stage 4 brain cancer', player1 + ' died from stage 4 breast cancer', player1 + ' was asian', player1 + ' died because asian heratige month ended', player1 + ' ate the nono powder', player1 + ' had an allergic reaction to air']
+    normal_logs = []
+    print(choice(death_messages))
+    names.remove(player1)
+  print(names[0] + ' wins!!')
+
+logs(player_names)
+
+#PLAYER ONE tried to swim in lava and died
+#PLAYER ONE used 2 seconds of copyrighted music on youtube and died
+#PLAYER ONE got cancelled on twitter for forgetting a tone indicator
+#PLAYER ONE died from death
+#PLAYER ONE didn't have pass royale
+#PLAYER ONE died from stage 4 brain cancer
+#PLAYER ONE died because asian heritage month ended
+#PLAYER ONE ate the nono powder
+#PLAYER ONE had an allergic reaction from air
+
+#PLAYER ONE played Elden Ring
+#PLAYER ONE had their mom type P into their google search bar
+#PLAYER ONE was caught lackin
+#PLAYER ONE ran out of the gamer sauce
+#PLAYER ONE touched grass
+#PLAYER ONE was caught playing Genshin Impact
+#PLAYER ONE became a discord mod
+#PLAYER ONE had an opinion in China
+#PLAYER ONE had taco bell
+#PLAYER ONE ran out of milk
+#PLAYER ONE got a B with asian parents
+#PLAYER ONE jumped off a cliff because he was told there was going to be gamer juice at the bottom by PLAYER TWO
