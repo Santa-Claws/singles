@@ -18,8 +18,8 @@ def logs(names):
     for i in range(0,len(names) - 1):
       player1 = choice(names)
       player2 = choice(names)
-      death_messages = [player2 + ' battles ' + player1 + ', ' + player2 + ' kills ' + player1,player1 + ' tried to swim in lava',player1 + ' used 2 seconds of copyrighted music on youtube and died', player1 + ' got cancelled on twitter for frgetting a tone indicator', player1 + ' died from death', player1 + ' didnt have pass royal', player1 + ' died from stage 4 brain cancer', player1 + ' died from stage 4 breast cancer', player1 + ' was asian', player1 + ' died because asian heratige month ended', player1 + ' ate the nono powder', player1 + ' had an allergic reaction to air']
-      normal_logs = ['default normal log\n(normal logs not done yet)']
+      death_messages = [player2 + ' battles ' + player1 + ', ' + player2 + ' kills ' + player1,player1 + ' tried to swim in lava',player1 + ' used 2 seconds of copyrighted music on youtube and died', player1 + ' got cancelled on twitter for frgetting a tone indicator', player1 + ' died from death', player1 + ' didnt have pass royal', player1 + ' died from stage 4 brain cancer', player1 + ' died from stage 4 breast cancer', player1 + ' was asian', player1 + ' died because asian heratige month ended', player1 + ' ate the nono powder', player1 + ' had an allergic reaction to air',player1 + ' played elden ring', player1 + ' had their mom type p in the google search bar', player1 + ' was caught lackin', player1 + ' had their dad catch them on the good stuff', player1 + ' ran out of the gamer sause', player1 + ' touched grass', player1 + ' became a discord mod', player1 + ' had an opinion in china', player1 + ' had to much taco bell', player1 + ' ran out of milk', player1 + ' battled ' + player1 + '\n ' + player1 + ' killed ' + player1,player1 + ' got a B with asian parents', player1 + ' jumped of a cliff because he was told their would be gamer jooce by ' + player2, player1 + ' was chocked by ' + player2,player1 + ' was killed by ' + player2, player1 + ' was eaten alive by ' + player2, player1 + ' was eaten alive by ' + player1]
+      normal_logs = [ player1 + ' found a condum in the sidewalk and decided to use it', player1 + ' ate a rock', player1 + ' tried to have sex with a car', player1 + ' drew a picture', player1 + ' masterbated in the back of the bookstore',player1 + ' married ' + player2 + ' in a cave', player1 + ' got severrly drunk']
       all_logs = ['death_messages','normal_logs']
       message_choice = choice(all_logs)
       if message_choice == 'death_messages':
@@ -56,3 +56,13 @@ logs(player_names)
 #PLAYER ONE ran out of milk
 #PLAYER ONE got a B with asian parents
 #PLAYER ONE jumped off a cliff because he was told there was going to be gamer juice at the bottom by PLAYER TWO
+
+#PLAYER ONE was choked by PLAYER TWO
+##PLAYER ONE was killed by PLAYER TWO, but PLAYER TWO decided to spare PLAYER ONE
+#PLAYER ONE was eaten alive by PLAYER TWO
+#PLAYER ONE was shot by PLAYER TWO
+#PLAYER ONE was stabbed by PLAYER TWO 
+#PLAYER ONE starved to death
+#PLAYER ONE was drowned by PLAYER TWO
+#PLAYER ONE accidentally ingested cyanide
+#PLAYER ONE was brutally ripped apart by PLAYER TWO
