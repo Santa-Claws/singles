@@ -20,12 +20,13 @@ def logs(names):
       player2 = choice(names)
       death_messages = [player2 + ' battles ' + player1 + ', ' + player2 + ' kills ' + player1,player1 + ' tried to swim in lava',player1 + ' used 2 seconds of copyrighted music on youtube and died', player1 + ' got cancelled on twitter for frgetting a tone indicator', player1 + ' died from death', player1 + ' didnt have pass royal', player1 + ' died from stage 4 brain cancer', player1 + ' died from stage 4 breast cancer', player1 + ' was asian', player1 + ' died because asian heratige month ended', player1 + ' ate the nono powder', player1 + ' had an allergic reaction to air']
       normal_logs = ['default normal log\n(normal logs not done yet)']
-      all_logs.append(death_messages)
-      all_logs.append(normal_logs)
+      all_logs = ['death_messages','normal_logs']
       message_choice = choice(all_logs)
-      print(choice(message_choice))
-      if message_choice == death_messages:
+      if message_choice == 'death_messages':
+        print(choice(death_messages))
         names.remove(player1)
+      elif message_choice == 'normal_logs':
+        print(choice(normal_logs))
       if len(names) == 1:
         print(names[0] + ' wins!!')
         break
