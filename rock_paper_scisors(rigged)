@@ -1,0 +1,22 @@
+print('this is a rock paper scisors game')
+
+def game_function():
+  print('we are going to play rock paper scisors')
+  print('you and me')
+  print('r for rock\np for paper\ns for scisors')
+  while True:
+    their_choice_input = input('so what will you play\n')
+    if their_choice_input == 'r':
+      print('i chose paper\nso i win')
+      return
+    elif their_choice_input == 's':
+      print('i chose rock so i win')
+      return
+    elif their_choice_input == 'p':
+      print('i chose scisors so i win')
+      return
+    else:
+      print('not a valid input')
+        
+
+game_function()
