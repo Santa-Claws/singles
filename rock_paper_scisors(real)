@@ -1,0 +1,53 @@
+from random import choice
+
+print('this is a rock paper scisors game')
+
+def game_function():
+  print('we are going to play rock paper scisors')
+  print('you and me')
+  print('r for rock\np for paper\ns for scisors')
+  while True:
+    game_responses = ['rock','paper','scisors']
+    game_choice = choice(game_responses)
+    their_choice_input = input('so what will you play\n')
+    if their_choice_input == 'r':
+      if game_choice == 'paper':
+        print('i chose paper\nSO I Win')
+        return
+      elif game_choice == 'scisors':
+        print('i chose scisors so You Win')
+        return
+      elif game_choice == 'rock':
+        print('we tied')
+        return
+      else:
+        continue
+    elif their_choice_input == 'p':
+      if game_choice == 'scisors':
+        print('i chose scisors\nSO I Win')
+        return
+      elif game_choice == 'rock':
+        print('i chose rock so You Win')
+        return
+      elif game_choice == 'paper':
+        print('we tied')
+        return
+      else:
+        continue
+    elif their_choice_input == 's':
+      if game_choice == 'rock':
+        print('i chose rock\nSO I Win')
+        return
+      elif game_choice == 'paper':
+        print('i chose paper so You Win')
+        return
+      elif game_choice == 'scisors':
+        print('we tied')
+        return
+      else:
+        continue
+    else:
+      print('not a valid input')
+
+game_function()
+        
