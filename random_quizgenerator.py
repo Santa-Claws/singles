@@ -70,8 +70,8 @@ def quiz_maker(capitols_question,capitols_dict):
             quiz.write(f'{num + 1}. {capitol}\n')
             anwser = capitols_dict.get(capitol)
             anwsers.write(f'{num + 1}. {anwser}\n')
-        quiz.close
-        anwsers.close
+        quiz.close()
+        anwsers.close()
 
 
 
