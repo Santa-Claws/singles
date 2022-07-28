@@ -1,5 +1,4 @@
-# still figureing it out
-# not ready tp run
+
 import os
 import re
 import json
@@ -63,7 +62,6 @@ def write_book(book_dict, rev_book_dict):
             if len(name_list) != len(num_list):
                 print('error\nnot all names have a number')
                 exit()
-#make list of names and list of numbers then have a for loop going through the lists and add contents to json file
         if os.path.exists('Contact_Book.json'):
             if os.stat('Contact_Book.json').st_size == 0:
                 book_dict = {}
@@ -116,5 +114,4 @@ while True:
     else:
         print('not valid')
 
-# use os to check excisting file and if no excisting file write if excisting file then append
 
