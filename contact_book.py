@@ -89,7 +89,8 @@ def write_book(book_dict, rev_book_dict):
         elif not os.path.exists('Contact_Book.json'):
             book = open('Contact_Book.json', 'w')
             rev_book = open('Contact_Book_Rev.json', 'w')
-            for name, num in name_list and num_list:
+            name_num_list = zip(name_list, num_list)
+            for name, num in name_num_list:
                 book_dict[name] = num
                 rev_book_dict[num] = name
             f = json.dumps(book_dict, indent=2)
